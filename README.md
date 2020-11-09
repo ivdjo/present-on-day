@@ -1,2 +1,7 @@
 # present-on-day
-https://drive.google.com/file/d/116oIZvDI-ClaSqq5cCVO2QLwOXVoTXw2/view
+
+Team AVJ
+
+-> Ivana N Djodjaga   (71160054)
+-> Ade Maria Ikanubun (71160076)
+-> Jordy Thimoty Paru (71160124)
