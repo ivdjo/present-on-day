@@ -6,4 +6,4 @@
 
                 -> Ade Maria Ikanubun     (71160076)
 
-                -> Jordy Thimoty Paru			(71160124)
+                -> Jordy Thimoty Paru		(71160124)
