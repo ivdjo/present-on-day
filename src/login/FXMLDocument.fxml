@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="685.0" style="-fx-background-color: #A0C4FF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.FXMLDocumentController">
+   <children>
+      <TextField fx:id="txtUsername" layoutX="355.0" layoutY="92.0" prefHeight="25.0" prefWidth="258.0" promptText="Inputkan Username Anda" />
+      <PasswordField fx:id="txtPass" layoutX="355.0" layoutY="144.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="258.0" promptText="Inputkan Password Anda" />
+      <Button layoutX="376.0" layoutY="207.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="216.0" text="Login">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Button>
+      <Label layoutX="279.0" layoutY="96.0" text="Username" />
+      <Label layoutX="279.0" layoutY="148.0" text="Password" />
+      <VBox layoutX="14.0" layoutY="17.0" prefHeight="291.0" prefWidth="237.0" style="-fx-background-color: #9BF6FF;">
+         <children>
+            <ImageView fitHeight="309.0" fitWidth="238.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icon.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </ImageView>
+         </children></VBox>
+   </children>
+</AnchorPane>

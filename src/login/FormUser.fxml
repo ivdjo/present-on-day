@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="890.0" style="-fx-background-color: #A0C4FF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.FormUserController">
+   <children>
+      <Label layoutX="16.0" layoutY="21.0" text="Welcome" />
+      <Button layoutX="14.0" layoutY="482.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Label fx:id="lblName" layoutX="75.0" layoutY="21.0" text="Name" />
+      <VBox layoutX="18.0" layoutY="69.0" prefHeight="275.0" prefWidth="78.0" spacing="24.0">
+         <children>
+            <Label text="Username" />
+            <Label text="Password" />
+            <Label text="Nama" />
+            <Label text="Kelamin" />
+         </children>
+      </VBox>
+      <VBox layoutX="96.0" layoutY="69.0" prefHeight="275.0" prefWidth="170.0" spacing="15.0">
+         <children>
+            <TextField fx:id="txtUsername" promptText="Username" />
+            <TextField fx:id="txtPassword" promptText="Password" />
+            <TextField fx:id="txtNama" promptText="Nama" />
+            <RadioButton fx:id="rbBoy" mnemonicParsing="false" prefHeight="17.0" prefWidth="107.0" text="Laki - laki">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgGender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbGirl" mnemonicParsing="false" prefHeight="17.0" prefWidth="110.0" text="Perempuan" toggleGroup="$tgGender" />
+         </children>
+      </VBox>
+      <TableView fx:id="tvUsers" layoutX="279.0" layoutY="69.0" onMouseClicked="#onClick" prefHeight="457.0" prefWidth="606.0" style="-fx-background-color: #9BF6FF;">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="48.0" text="ID" />
+          <TableColumn fx:id="colUsername" prefWidth="129.0" text="Username" />
+            <TableColumn fx:id="colPassword" prefWidth="126.0" text="Password" />
+            <TableColumn fx:id="colNama" minWidth="0.0" prefWidth="151.0" text="Nama" />
+            <TableColumn fx:id="colGender" maxWidth="197.0" prefWidth="151.0" text="Kelamin" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="418.0" mnemonicParsing="false" onAction="#btnTambahUser" prefHeight="25.0" prefWidth="75.0" text="Tambah" />
+      <Button layoutX="195.0" layoutY="418.0" mnemonicParsing="false" onAction="#btnHapusUser" prefHeight="25.0" prefWidth="75.0" text="Hapus" />
+      <Button layoutX="105.0" layoutY="418.0" mnemonicParsing="false" onAction="#btnEditUser" prefHeight="25.0" prefWidth="75.0" text="Edit" />
+   </children>
+</AnchorPane>
