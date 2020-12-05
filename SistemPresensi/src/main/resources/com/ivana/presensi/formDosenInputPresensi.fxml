@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="formDosenInputPresensi" prefHeight="628.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivana.presensi.FormDosenInputPresensiController">
+   <children>
+        <VBox layoutX="14.0" layoutY="100.0" prefHeight="460.0" prefWidth="298.0">
+         <children>
+             <Label text="Nama Kelas">
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblNamaKelas" text="lblKelas">
+               <padding>
+                  <Insets bottom="20.0" left="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label text="Nama Mata Kuliah">
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblMakul" text="lblMakul">
+               <padding>
+                  <Insets bottom="20.0" left="10.0" />
+               </padding>
+            </Label>
+            <Label text="Kode Matakuliah">
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblKode" text="lblKode">
+               <padding>
+                  <Insets bottom="20.0" left="10.0" />
+               </padding>
+            </Label>
+            <Label text="Nama Dosen">
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblDosen" text="lblDosen">
+               <padding>
+                  <Insets bottom="20.0" left="10.0" />
+               </padding>
+            </Label>
+            <Label text="Tanggal Perkuliahan">
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <DatePicker fx:id="tglPresensi" editable="false" promptText="Select Tanggal">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" />
+               </VBox.margin></DatePicker>
+            <Label text="Nama Pertemuan">
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtPertemuan" promptText="Input Nama Pertemuan">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <Button layoutX="24.0" layoutY="583.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="25.0" prefWidth="118.0" text="Back" />
+      <TableView fx:id="tvMatakuliah" layoutX="333.0" layoutY="65.0" onMouseClicked="#selectTable" prefHeight="460.0" prefWidth="391.0">
+        <columns>
+          <TableColumn fx:id="colNama" prefWidth="309.0" text="Nama Mahasiswa" />
+          <TableColumn fx:id="colStatus" prefWidth="81.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="21.0" prefHeight="27.0" prefWidth="438.0" style="-fx-background-color: white;" text="Presensi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="655.0" layoutY="536.0" mnemonicParsing="false" onAction="#btnHadir" prefHeight="25.0" prefWidth="69.0" text="Hadir" />
+      <Button layoutX="572.0" layoutY="536.0" mnemonicParsing="false" onAction="#btnAbsen" prefHeight="25.0" prefWidth="69.0" text="Absen" />
+      <Button layoutX="333.0" layoutY="536.0" mnemonicParsing="false" onAction="#btnSimpan" prefHeight="25.0" prefWidth="69.0" text="Simpan" />
+   </children> 
+</AnchorPane>

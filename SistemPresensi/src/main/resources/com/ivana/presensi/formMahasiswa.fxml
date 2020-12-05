@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="formMahasiswa" prefHeight="628.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivana.presensi.FormMahasiswaController">
+    <children>
+      <Button layoutX="24.0" layoutY="583.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="25.0" prefWidth="118.0" text="Back" />
+      <TableView fx:id="tvMahasiswa" layoutX="24.0" layoutY="65.0" onMouseClicked="#selectTable" prefHeight="295.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="58.0" text="ID" />
+          <TableColumn fx:id="colNim" prefWidth="127.0" text="NIM" />
+            <TableColumn fx:id="colName" prefWidth="233.0" text="Name" />
+            <TableColumn fx:id="colGender" prefWidth="126.0" text="Gender" />
+            <TableColumn fx:id="colJurusan" prefWidth="168.0" text="Jurusan" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtNim" layoutX="24.0" layoutY="392.0" prefHeight="25.0" prefWidth="280.0" promptText="Input NIM" />
+      <Label layoutX="24.0" layoutY="21.0" prefHeight="27.0" prefWidth="438.0" style="-fx-background-color: white;" text="Data Mahasiswa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="24.0" layoutY="433.0" prefHeight="25.0" prefWidth="280.0" promptText="Input Full Name" />
+      <RadioButton fx:id="rbBoy" layoutX="60.0" layoutY="479.0" mnemonicParsing="false" text="Laki - laki">
+         <toggleGroup>
+            <ToggleGroup fx:id="tgGender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbGirl" layoutX="161.0" layoutY="479.0" mnemonicParsing="false" text="Perempuan" toggleGroup="$tgGender" />
+      <Button layoutX="387.0" layoutY="408.0" mnemonicParsing="false" onAction="#btnTambah" prefHeight="25.0" prefWidth="118.0" text="Tambah" />
+      <Button layoutX="389.0" layoutY="446.0" mnemonicParsing="false" onAction="#btnEdit" prefHeight="25.0" prefWidth="242.0" text="Edit" />
+      <Button layoutX="514.0" layoutY="408.0" mnemonicParsing="false" onAction="#btnHapus" prefHeight="25.0" prefWidth="118.0" text="Hapus" />
+      <ComboBox fx:id="comboJurusan" layoutX="37.0" layoutY="511.0" onAction="#select" prefHeight="25.0" prefWidth="254.0" promptText="Select Jurusan" />
+   </children>
+</AnchorPane>
