@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="formDosenInputPresensi" prefHeight="628.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivana.presensi.FormDosenInputPresensiController">
+   <children>
+      <Button layoutX="24.0" layoutY="583.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="25.0" prefWidth="118.0" text="Back" />
+      <TableView fx:id="tvMatakuliah" layoutX="24.0" layoutY="252.0" onMouseClicked="#selectTable" prefHeight="315.0" prefWidth="707.0">
+        <columns>
+          <TableColumn fx:id="colNim" prefWidth="135.0" text="NIM" />
+          <TableColumn fx:id="colNama" prefWidth="329.0" text="Nama Mahasiswa" />
+          <TableColumn fx:id="colGender" prefWidth="128.0" text="Gender" />
+          <TableColumn fx:id="colStatus" prefWidth="114.0" text="Status Hadir" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="21.0" prefHeight="27.0" prefWidth="438.0" style="-fx-background-color: white;" text="Presensi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="536.0" layoutY="221.0" mnemonicParsing="false" onAction="#btnHadir" prefHeight="25.0" prefWidth="91.0" text="Hadir" />
+      <Button layoutX="640.0" layoutY="221.0" mnemonicParsing="false" onAction="#btnAbsen" prefHeight="25.0" prefWidth="91.0" text="Absen" />
+       <Label layoutX="26.0" layoutY="70.0" text="Nama Kelas">
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNamaKelas" layoutX="29.0" layoutY="119.0" text="lblKelas">
+         <padding>
+            <Insets bottom="20.0" left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="142.0" layoutY="70.0" text="Nama Mata Kuliah">
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMakul" layoutX="142.0" layoutY="119.0" text="lblMakul">
+         <padding>
+            <Insets bottom="20.0" left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="295.0" layoutY="70.0" text="Kode Matakuliah">
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblKode" layoutX="295.0" layoutY="119.0" text="lblKode">
+         <padding>
+            <Insets bottom="20.0" left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="433.0" layoutY="70.0" text="Nama Dosen">
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDosen" layoutX="434.0" layoutY="119.0" text="lblDosen">
+         <padding>
+            <Insets bottom="20.0" left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="26.0" layoutY="175.0" text="Tanggal Perkuliahan">
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTanggal" layoutX="30.0" layoutY="215.0" text="lblTanggal">
+         <padding>
+            <Insets bottom="20.0" left="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="189.0" layoutY="175.0" text="Nama Pertemuan">
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPertemuan" layoutX="189.0" layoutY="215.0" text="lblPertemuan">
+         <padding>
+            <Insets bottom="20.0" left="10.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="formDosenTatapMuka" prefHeight="628.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivana.presensi.FormDosenTatapMukaController">
+    <children>
+      <Button layoutX="24.0" layoutY="583.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="25.0" prefWidth="118.0" text="Back" />
+      <TableView fx:id="tvTatapMuka" layoutX="24.0" layoutY="202.0" onMouseClicked="#selectTable" prefHeight="323.0" prefWidth="700.0" style="-fx-font-size: 12px;">
+        <columns>
+          <TableColumn fx:id="colPertemuan" prefWidth="521.0" text="Nama Pertemuan" />
+          <TableColumn fx:id="colTanggal" prefWidth="178.0" text="Tanggal" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="21.0" prefHeight="27.0" prefWidth="438.0" style="-fx-background-color: white;" text="Tatap Muka Kuliah">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="582.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnPresensi" prefHeight="25.0" prefWidth="142.0" text="Presensi" />
+      <Label layoutX="413.0" layoutY="82.0" text="Kelas" />
+      <Label layoutX="412.0" layoutY="114.0" text="Matakuliah" />
+      <Label layoutX="413.0" layoutY="150.0" text="Kode Matakuliah" />
+      <Label fx:id="lblKelas" layoutX="531.0" layoutY="82.0" text="lblKelas" />
+      <Label fx:id="lblMakul" layoutX="531.0" layoutY="114.0" text="lblMakul" />
+      <Label fx:id="lblKode" layoutX="531.0" layoutY="150.0" text="lblKode" />
+      <TextField fx:id="txtPertemuan" layoutX="24.0" layoutY="78.0" prefHeight="25.0" prefWidth="355.0" promptText="Inputkan Nama Pertemuan" />
+      <DatePicker fx:id="dpTanggal" editable="false" layoutX="24.0" layoutY="119.0" prefHeight="25.0" prefWidth="355.0" promptText="Pilih Tanggal Pertemuan" />
+      <Button layoutX="24.0" layoutY="167.0" mnemonicParsing="false" onAction="#btnTambah" prefHeight="25.0" prefWidth="142.0" text="Tambah Pertemuan" />
+      <Button layoutX="178.0" layoutY="167.0" mnemonicParsing="false" onAction="#btnHapus" prefHeight="25.0" prefWidth="142.0" text="Hapus Pertemuan" />
+   </children>
+</AnchorPane>

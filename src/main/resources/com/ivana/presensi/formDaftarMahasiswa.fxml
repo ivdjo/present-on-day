@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="formDaftarMahasiswa" prefHeight="628.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivana.presensi.FormDaftarMahasiswaController">
+    <children>
+      <Button layoutX="24.0" layoutY="583.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="25.0" prefWidth="118.0" text="Back" />
+      <TableView fx:id="tvMahasiswa" layoutX="24.0" layoutY="56.0" onMouseClicked="#selectKelas" prefHeight="489.0" prefWidth="710.0" style="-fx-font-size: 12px;">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="75.0" text="ID" visible="false" />
+          <TableColumn fx:id="colNim" editable="false" prefWidth="128.0" text="NIM" />
+          <TableColumn fx:id="colNama" editable="false" prefWidth="310.0" text="Nama" />
+          <TableColumn fx:id="colGender" editable="false" prefWidth="127.0" text="Gender" />
+          <TableColumn fx:id="colJurusan" editable="false" prefWidth="144.0" text="Jurusan" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="21.0" prefHeight="27.0" prefWidth="438.0" style="-fx-background-color: white;" text="Daftar Mahasiswa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="594.0" layoutY="558.0" mnemonicParsing="false" onAction="#btnDaftar" prefHeight="25.0" prefWidth="142.0" text="Pilih Mahasiswa" />
+   </children>
+</AnchorPane>

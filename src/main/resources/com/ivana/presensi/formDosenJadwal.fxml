@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="formDosenJadwal" prefHeight="628.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivana.presensi.FormDosenJadwalController">
+    <children>
+      <Button layoutX="24.0" layoutY="583.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="25.0" prefWidth="118.0" text="Back" />
+      <TableView fx:id="tvMatakuliah" layoutX="24.0" layoutY="65.0" onMouseClicked="#selectTable" prefHeight="493.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="colKelas" prefWidth="98.0" text="Kelas" />
+          <TableColumn fx:id="colKode" prefWidth="149.0" text="Kode Mata Kuliah" />
+            <TableColumn fx:id="colMakul" prefWidth="354.0" text="Nama Matakuliah" />
+            <TableColumn fx:id="colHari" prefWidth="98.0" text="Hari" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="21.0" prefHeight="27.0" prefWidth="438.0" style="-fx-background-color: white;" text="Jadwal">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

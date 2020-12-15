@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="formDosenLaporanDetail" prefHeight="628.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivana.presensi.FormDosenLaporanDetailController">
+    <children>
+        <VBox layoutX="14.0" layoutY="100.0" prefHeight="460.0" prefWidth="243.0" style="-fx-background-color: white;">
+         <children>
+             <Label text="Nama Kelas">
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblNamaKelas" text="lblKelas">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label text="Nama Mata Kuliah">
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblMakul" text="lblMakul">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" />
+               </padding>
+            </Label>
+            <Label text="Kode Matakuliah">
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblKode" text="lblKode">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" />
+               </padding>
+            </Label>
+            <Label text="Nama Dosen">
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblDosen" text="lblDosen">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" />
+               </padding>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <Button layoutX="24.0" layoutY="583.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="25.0" prefWidth="118.0" text="Back" />
+      <TableView fx:id="tvMatakuliah" layoutX="273.0" layoutY="103.0" onMouseClicked="#selectTable" prefHeight="506.0" prefWidth="451.0">
+        <columns>
+          <TableColumn fx:id="colNama" prefWidth="262.0" text="Nama Mahasiswa" />
+          <TableColumn fx:id="colKehadiran" prefWidth="105.0" text="Total Kehadiran" />
+          <TableColumn fx:id="colPersentase" prefWidth="83.0" text="Persentase" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="21.0" prefHeight="27.0" prefWidth="438.0" style="-fx-background-color: white;" text="Kehadiran Mahasiswa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearch" layoutX="397.0" layoutY="78.0" prefHeight="25.0" prefWidth="223.0" promptText="Search . . . . .  ." />
+      <Button layoutX="620.0" layoutY="78.0" mnemonicParsing="false" onAction="#btnSearch" prefHeight="25.0" prefWidth="104.0" text="Search" />
+   </children>
+</AnchorPane>
