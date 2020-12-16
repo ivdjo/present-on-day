@@ -29,7 +29,7 @@ import javafx.scene.layout.AnchorPane;
 /**
  * FXML Controller class
  *
- * @author ANGKY
+ *
  */
 public class FormInputPresensiController implements Initializable {
 
